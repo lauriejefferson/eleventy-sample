@@ -4,7 +4,7 @@ layout: default.liquid
 <h1 class="title">{{ title }} </h1>
 <ul role="list" class="tags">
 {% for tag in tags %}
-    <li ><a href="/tags/{{ tag }}" class="tag">{{tag}}</a></li>
+    <li ><a href="{{ '/tags/{{ tag }}' | url }}" class="tag">{{tag}}</a></li>
 {% endfor %}
 </ul>
 {{ content }}
