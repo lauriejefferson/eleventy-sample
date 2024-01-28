@@ -28,6 +28,7 @@ module.exports = (eleventyConfig) => {
     dir: {
       input: 'src',
       output: 'public',
+      pathPrefix: '/eleventy-sample/',
     },
   };
 };
