@@ -1,0 +1,24 @@
+---
+layout: pages.liquid
+title: Posts
+---
+
+{% for post in collections.post %}
+<article class="article">
+    <h2>{{ post.data.title }}</h2>
+    <small> 
+        <em>Posted on: {{ post.date | postDate }}</em> 
+        {{ post.templateContent | emojiReadTime }}
+    </small>
+    <ul role="list" class="tags">
+        {% for tag in post.data.tags %}
+            <li class="tag"><a href="/tags/{{ tag }}" >{{ tag  }}</a></li>
+        {% endfor %}
+    </ul>
+    {{ post.data.page.excerpt | md }}
+    <div>
+       <a href="{{ post.url }}" class="read-more">Read More</a> 
+    </div>
+</article>
+<hr />
+{% endfor %}

@@ -1,0 +1,20 @@
+---
+layout: default.liquid
+permalink: /tags/{{ tag | slugify }}/
+pagination:
+    data: collections
+    size: 1
+    alias: tag
+    addAllPagesToCollections: true
+eleventyComputed:
+    title: Posts tagged with {{ tag }}
+---
+
+
+<h1>{{ title }}</h1>
+
+<ul role="list">
+{% for post in collections[tag] %}
+  <li class="tag-list"><a href="{{ post.url }}" class="tag-link">{{ post.data.title }}</a></li>
+{% endfor %}
+</ul>
