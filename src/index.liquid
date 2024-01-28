@@ -20,7 +20,7 @@ dominion; the kingdom shall come to the daughter of Jerusalem.</p></blockquote>
             <h2>{{ post.data.title }}</h2>
             <p>{{ post.date | postDate }}</p>
             {{ post.data.page.excerpt | md }}
-            <a href="{{ post.url }}" class="read-more">Read more</a>
+            <a href="{{ post.url | url }}" class="read-more">Read more</a>
         </article>
     {% endfor %} 
 </section>

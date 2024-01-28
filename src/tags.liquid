@@ -15,6 +15,6 @@ eleventyComputed:
 
 <ul role="list">
 {% for post in collections[tag] %}
-  <li class="tag-list"><a href="{{ post.url }}" class="tag-link">{{ post.data.title }}</a></li>
+  <li class="tag-list"><a href="{{ post.url | url }}" class="tag-link">{{ post.data.title }}</a></li>
 {% endfor %}
 </ul>
