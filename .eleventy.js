@@ -6,7 +6,7 @@ const emojiReadTime = require('@11tyrocks/eleventy-plugin-emoji-readtime');
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy('./src/css');
   eleventyConfig.addPassthroughCopy('./src/js');
-  eleventyConfig.addPlugin(emojiReadTime);
+  eleventyConfig.addPlugin(emojiReadTime, { showEmoji: false });
   eleventyConfig.addFilter('md', function (content = '') {
     return markdownIt({ html: true }).render(content);
   });
