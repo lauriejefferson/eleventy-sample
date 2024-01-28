@@ -1,4 +1,4 @@
-@import url('https://api.fonts.coollabs.io/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+/* @import url('https://api.fonts.coollabs.io/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap'); */
 
 /* Box sizing rules */
 *,
@@ -178,7 +178,7 @@ em {
 }
 
 blockquote {
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-style: italic;
     font-size: 1.125rem;
     line-height: 1.4;
