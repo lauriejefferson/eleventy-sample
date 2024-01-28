@@ -12,7 +12,7 @@ title: Posts
     </small>
     <ul role="list" class="tags">
         {% for tag in post.data.tags %}
-            <li class="tag"><a href="{{ '/tags/{{ tag }}' | url }}" >{{ tag }}</a></li>
+            <li class="tag"><a href="{{ '/tags/{{tag}}' }}" >{{ tag }}</a></li>
         {% endfor %}
     </ul>
     {{ post.data.page.excerpt | md }}
