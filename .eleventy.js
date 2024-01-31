@@ -20,7 +20,7 @@ module.exports = (eleventyConfig) => {
     excerpt_separator: '<!--excerpt-->',
   });
   eleventyConfig.addCollection('recentPosts', function (collection) {
-    return collection.getAllSorted().reverse().slice(0, 2);
+    return collection.getAllSorted().reverse().slice(2, 4);
   });
   eleventyConfig.addFilter('dump', (obj) => {
     return util.inspect(obj);
