@@ -5,7 +5,7 @@ layout: default.liquid
 <ul role="list" class="tags">
 {% for tag in tags %}
     {% if tag != 'post' %}
-        <li><a href="{{ '/tags/' url }}{{ tag }}" class="tag">{{tag}}</a></li>
+        <li><a href="{{ '/tags/' | url }}{{ tag }}" class="tag">{{tag}}</a></li>
     {% endif %}
 {% endfor %}
 </ul>
