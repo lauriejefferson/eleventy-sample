@@ -1,9 +1,8 @@
 ---
-layout: post
-title: My Fourth Blog Post
-tags: ['post', 'javascript']
+layout: post.liquid
+title: My First Blog Post
+tags: ['post', 'css', 'sass']
 ---
-
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est.
 

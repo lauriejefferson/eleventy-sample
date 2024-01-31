@@ -1,7 +1,7 @@
 ---
 layout: post.liquid
 title: My First Blog Post
-tags: ['post', 'css']
+tags: ['post', 'eleventy']
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est.
