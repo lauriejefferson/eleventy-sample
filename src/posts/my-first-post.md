@@ -1,6 +1,7 @@
 ---
 layout: post.liquid
 title: My First Blog Post
+date: 2024-01-28
 tags: ['post', 'eleventy']
 ---
 

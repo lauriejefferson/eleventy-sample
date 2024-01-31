@@ -11,7 +11,9 @@ module.exports = (eleventyConfig) => {
     return markdownIt({ html: true }).render(content);
   });
   eleventyConfig.addFilter('postDate', (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toLocaleString(
+      DateTime.DATE_MED
+    );
   });
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,

@@ -1,6 +1,7 @@
 ---
 layout: post.liquid
 title: My Third Blog Post
+date: 2024-01-30
 tags: ['post', 'html', 'css', 'sass' ]
 ---
 

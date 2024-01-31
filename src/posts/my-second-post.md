@@ -1,6 +1,7 @@
 ---
 layout: post.liquid
 title: My Second Blog Post
+date: 2024-01-29
 tags: ['post', 'javascript', 'node']
 ---
 
