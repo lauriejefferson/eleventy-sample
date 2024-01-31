@@ -1,6 +1,5 @@
 {
     "layout": "pages.liquid",
     "tags": "pages",
-    "filter": "post",
     "permalink": "/{{ title | slugify }}/index.html"
 }
