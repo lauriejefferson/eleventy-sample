@@ -1,6 +1,6 @@
 ---
 layout: post.liquid
-title: My First Blog Post
+title: My Second Blog Post
 tags: ['post', 'javascript', 'node']
 ---
 

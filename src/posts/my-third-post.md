@@ -1,6 +1,6 @@
 ---
 layout: post.liquid
-title: My First Blog Post
+title: My Third Blog Post
 tags: ['post', 'html', 'css', 'sass' ]
 ---
 
