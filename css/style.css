@@ -91,7 +91,7 @@ body {
 .container {
     margin-inline: auto;
     max-width: 70rem;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 section {
@@ -106,7 +106,7 @@ h2 {
     margin: 2em 0;
     border: none;
     border-radius: 5px;
-    padding: 2em;
+    /* padding: 2em; */
 }
 
 .flex {
@@ -207,15 +207,16 @@ cite {
 }
 
 .tags {
+    margin-top: 0.5rem;
     padding: 0;
     display: flex;
     gap: 1em;
 }
 
 .tag {
-    background-color: #B64EBC;
-    color: #FDFCFA;
-    padding: 0.25em 1em;
+    background-color: #b64eb6;
+    color: white;
+    padding: 0.25em 0.5em;
     border: none;
     border-radius: 5px;
     text-decoration: none;
