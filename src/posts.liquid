@@ -13,7 +13,7 @@ title: Posts
     <ul role="list" class="tags">
         {% for tag in post.data.tags %}
             {% if tag != 'post' %}
-                <li><a href="{{ '/tags/' | url }}{{ tag }}" class="tag" >{{ tag }}</a></li>
+                <li><a href="{{ '/tags/' | url }}{{ tag }}" class="tag" ><small>{{ tag }}</small></a></li>
             {% endif %}
         {% endfor %}
     </ul>
