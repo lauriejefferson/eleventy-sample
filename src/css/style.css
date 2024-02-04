@@ -89,9 +89,11 @@ body {
 }
 
 .container {
+    --content-max-width: 1000px;
+    --padding-inline: 2rem;
+
     margin-inline: auto;
-    max-width: 70rem;
-    padding: 0 2rem;
+    width: min(var(--content-max-width), 100% - (var(--padding-inline)));
 }
 
 section {
