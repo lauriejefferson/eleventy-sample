@@ -251,6 +251,12 @@ footer {
     gap: 1em;
 }
 
+.nav-pagination {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
 footer p {
     margin-inline: auto;
 }

@@ -1,9 +1,12 @@
 ---
 layout: pages.liquid
-title: Posts
+pagination: 
+    data: collections.post
+    size: 2
+    alias: posts
 ---
 
-{% for post in collections.post %}
+{% for post in posts %}
 <article class="article">
     <h2>{{ post.data.title }}</h2>
     <small> 
@@ -23,4 +26,18 @@ title: Posts
     </div>
 </article>
 <hr />
+
 {% endfor %}
+
+<nav class="nav">
+<ol role="list" class="nav-pagination">
+{% if pagination.href.previous %}
+    <li><a href="{{ pagination.href.previous }}"> Previous </a></li>
+{% endif %}
+{% if pagination.href.next %}
+  <a href="{{ pagination.href.next }}">Next </a>  
+{% endif %}
+</ol>
+
+
+</nav>
