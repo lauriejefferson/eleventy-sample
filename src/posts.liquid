@@ -32,10 +32,10 @@ pagination:
 <nav class="nav">
 <ol role="list" class="nav-pagination">
 {% if pagination.href.previous %}
-    <li><a href="{{ pagination.href.previous }}"> Previous </a></li>
+    <li><a href="{{ pagination.href.previous | url }}"> Previous </a></li>
 {% endif %}
 {% if pagination.href.next %}
-  <a href="{{ pagination.href.next }}">Next </a>  
+  <a href="{{ pagination.href.next | url }}">Next </a>  
 {% endif %}
 </ol>
 
