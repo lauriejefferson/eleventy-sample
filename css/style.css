@@ -184,13 +184,16 @@ blockquote {
     font-style: italic;
     font-size: 1.125rem;
     line-height: 1.4;
+    border-left: 10px solid #FFD700;
+    padding-left: 1em;
+    margin-left: 0;
     position: relative;
 }
 
 blockquote p::before {
     content: '\201c';
     position: absolute;
-    left: -0.5em;
+    left: 0.5em;
 }
 
 blockquote p::after {
@@ -201,7 +204,7 @@ blockquote p::after {
 cite {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    padding: 2em 2.3em;
+    padding: 2em 0;
 }
 
 .subtitle-1 {
