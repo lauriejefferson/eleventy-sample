@@ -4,6 +4,7 @@ pagination:
     data: collections.post
     size: 2
     alias: posts
+    reverse: true
 ---
 
 {% for post in posts %}
@@ -31,12 +32,13 @@ pagination:
 
 <nav class="nav">
 <ol role="list" class="nav-pagination">
-{% if pagination.href.previous %}
-    <li><a href="{{ pagination.href.previous | url }}"> Previous </a></li>
-{% endif %}
 {% if pagination.href.next %}
-  <a href="{{ pagination.href.next | url }}">Next </a>  
+<a href="{{ pagination.href.next | url }}"> Older Posts </a>
 {% endif %}
+{% if pagination.href.previous %}
+    <li><a href="{{ pagination.href.previous | url }}"> Newer Posts </a></li>
+{% endif %}
+
 </ol>
 
 
